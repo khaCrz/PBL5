@@ -111,5 +111,5 @@ whitenoise==6.2.0
 widgetsnbextension==3.6.0
 wrapt==1.14.1
 python-jwt==2.0.1
-Pyrebase==3.0.27
+pyrebase4
 gunicorn
