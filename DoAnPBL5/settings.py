@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1g(g)13r35y%du1m&uh!)uak^6=j+c_le0jr!(dj5$bb#m)hs*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['colab.research.google.com','pbl5smartglass.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','pbl5smartglass.herokuapp.com']
 
 
 # Application definition
