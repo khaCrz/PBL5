@@ -44,9 +44,7 @@ impacket==0.9.11
 itsdangerous==0.24
 Jinja2==2.10
 oauth2client==3.0.0
-pcapy==0.10.5
 pipenv==2018.7.1
-ply==3.8
 protobuf==3.6.0
 pyasn1==0.4.4
 pyasn1-modules==0.2.2
