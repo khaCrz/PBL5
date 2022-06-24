@@ -45,7 +45,7 @@ def GetTextFromVoice(url):
         captured_audio = recognizer.record(source)
     try:
         txt = recognizer.recognize_google(captured_audio)
-        return ("You said: ' " + txt + " '")
+        return (txt)
     except Exception as e:
         return ("Sorry I understand!")
 
@@ -54,10 +54,12 @@ def GetText(request):
     file = FileWav.get_file_by_id(id)
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
+    Text = GetTextFromVoice(Path)
+    
     #get all file
     data = {}
     data['Files'] = file
-    data['Paths'] = Path
+    data['Text'] = Text
     return render(request, 'result.html', data)
 
 
