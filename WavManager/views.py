@@ -4,7 +4,7 @@ import speech_recognition as sr
 from .models import FileWav
 import pyrebase
 
-Key{
+Key = {
   "type": "service_account",
   "project_id": "voice-project-347310",
   "private_key_id": "59b772258c73af14b184633f54bff10774ce5840",
