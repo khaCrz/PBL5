@@ -52,13 +52,13 @@ def GetTextFromVoice(url):
 def GetText(request):
     id = request.GET.get('id')
     file = FileWav.get_file_by_id(id)
-    
-    
+    storage.child(file.name).download(file.name,file.name)
+    Path = os.path.abspath(os.getcwd())
     #get all file
-    ListFile = FileWav.objects.all()
     data = {}
-    data['ListFiles'] = ListFile
-    return render(request, 'main.html', data)
+    data['Files'] = file
+    data['Paths'] = Path
+    return render(request, 'result.html', data)
 
 
 def Main(request):
