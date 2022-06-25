@@ -7,27 +7,26 @@ import pyrebase
 
 Key = {
   "type": "service_account",
-  "project_id": "voice-project-347310",
-  "private_key_id": "59b772258c73af14b184633f54bff10774ce5840",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0A8M+e94iXKuV\nmy/u5VGDoqgFubz76QRTcaVfXh4ynHIBuPitA0wUj9bzT658LOTgbG4YbdWtGB2F\nqxsl4Zizsyd9Rebl6t+ZEM9uskiD+P7trapDthh6VaKwZkN+eA3AVckKvZmnia11\nimRCqzXK3DVjN4ojJrHs8uq2Ed2UoprmqGyMbf7zPl6ErYQvoXydZzpAlt9qShaX\nNKtjBFDLF4CHuIkoP+y649SmpfCCj/yVfIE6gy/V8ejmYLElsOn2qxYG3hoVKoq7\naT1sfE4ftcOHFMQuHwLGCiytgVHMBHXLE3QfzpwmgRJZutjKKyd0bGYlmJRmqs85\nlTKPgPo9AgMBAAECggEAMNr2kc43VtcUwFkqVKlLCrFJ7affqPSwNl9ZFP1rr6uy\n61HCt931t3zkRwugnNXoVhpHdPzWKZCqbn0mNI06Dsc4F/ExPcQVZCriSTY8pQie\nU243EAJrOURlj39poPi/Lqx5kB8uBQDCIWzqUge6ZTCHksJfjLOzRU4WMky9+NkF\nXAz3z89WAoBe7Li4AyZ2zRyDJ393F+9AuliArnozmEi9KfH5BGP1HG/NwEMnLR8s\nwdNRMRLelJbC1x+GhHie9ITdDh4SBvNaeLNiLONGjlQnnpnoO9iz9jW/t4tcUaho\nMR/u3NR96hp4ef2CypYcPArDHplA1l543aKFXiueRwKBgQDx2FWzjRgtRyoX6NAg\n2wBcPRdox9/dKQq9NChfvpHKXahhFvJ+Cy+yxoaNs7tXQifD9pmanKEq+ML37LSp\nj3VWBFnSNJGaUmz8W+BaimTMJZPsBR6ZnFAOV6ILhhzWehQaTJj/d4ga2GfMtQ/m\ng4s893gYd1b3mLniRU6sJgrONwKBgQC+jP90S8CeAtWYe1PWqb/kXvf+8/0Z4d/2\n/s/yC+8skpPTV6ftPjJAUy+vT6bHreOe6x/pikHaJ08s4V8XFLVsIjhBkbr0oY1T\nl3XnXNe7wYsXR3Jbrot57VIWeFgvVuiNKAwE093UNP/EQFPbnOAyiXY55kwKhvq+\n0sNejh7hKwKBgQClvP1WlF46QWfuhMWFjrBbhh5x13Bqj0Ll0UXN/7rH9ZF8IA7F\nJINmwDjcCY1cymCYInq4A5lL6rkq0RQqk7702Px5Wz9hhBVeiNRjGC7l3ObXu9Zx\nrTcL7TCHNzyyG22FbHL5uIAU7bONDZS9A+87M9kg40A9ZHQXRioZPeTv1wKBgFkL\nxuzv4Yl1xZ9GMr2kAfqUrsvD9Uk9Fs5z8XUpQpHPxakD04O4hv8sYKJKVKQHjNFd\nC0K1y2RI7mUIxMkick2gCC4MDhP30vV3WC/QYThqj7dHOhfCD4fg8XVys7Mbp/0e\n887lu0pJoiRx8z4zp0m2lzsjdfGNdmvqTkZHoAKVAoGAKSF2i/eGZyXFj06TaZLl\nZ3YjxVD12CiL1kH/TyDk171qqMRUdlF+IL2l82N31C7dLy6xi//b7k8KWcsZwH9E\nRsyklz8SWXf99pP/NQjuekgMNNO2Brk1iD50gi3ZfgWA+UNNTpg+lbPKbYTxa4sg\n9s4owH/+Hmpe+YlBsGtaVa4=\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-zwzsk@voice-project-347310.iam.gserviceaccount.com",
-  "client_id": "104935961280783379901",
+  "project_id": "smartglasses-1653630452006",
+  "private_key_id": "69ffc73b82575710f68519f693ca07b28a9048f9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFWUAPCEh+0T6Q\nBov0mgtzMcer5WFbUPsXujE/DoJeXGvRzwhUdDOe62va18iJq9VJTNII0xtttCFk\n9fYVp9jrv9Kq2ZnQ7qiHc0uDnrvkw9lrJbRBFkn/HoOJVkOaclxzldZx+MGjFhXw\n3Q2r1whhON54shL1+DGA14czSDlGYaNp5o6S09YKXmb56y+pxCwV3jGQDdjv3iEQ\nTyhwDFKoK5fLB8todvwEdI5XDF/ncfYiWzo7p/DsKZMJuZX+88wfthQVJWIJiqcg\nuJdjhB1oDLW1+FI3Co1s2Ei0XuS6C96opnXuiGBjlwVWmvwbTKcNzV+ufFowym/u\nAAhITqyvAgMBAAECggEALkYiLiQsE4hu2gie8ojYXHd0sUrEzEutxL+E4ps9WHDl\nWznnYx4oKIBdNuBYBmgDR/+6VBVkHhIZrnm57RQBWi4NcMA7P/FmFPSk5UToG9kM\ndwJNROG8EhUOlLpkeaeNJBEjSnAgv2PjWyoKFZwDPADAsZ5XsdMzkFl5Oz4ZJ/Y9\nmAFoC2hc9Z6MBVrhUiMFId8GMf+OdsCywGJArwME8fiQGGtJLhsJrZI4HYFE5y9E\nNQi5S5SSFmuPU+gL+6ZMnJybeXFr/XfQ9JKgsaV4hlZxZ8o8tUpou6bAbDK7RnaV\nyNYdo5ESFDWl/k6liVTtEDQHwQSOhMjbezur037VkQKBgQDjGK9zvBOa1AWUlMeC\nisa+EEC5GQNpaj8cpiHNlOT0Hgt5qVrzUMPN+82TuHwUhkTFb4PjZN6UCgoQM6qR\nj1u5Eb1bYhiZVRvcgUEkpI1Qc8vdmEDi68+qjR9K9ndkUl0jtsI+mVTFmbeuhgY1\nsbjOiG1y33k+HZxwKeHu3Jm51wKBgQDed1CGl8XW27rVS56K1h4Tu0ebzGwzNgE2\nzp1aTUpBDZtpEHoGIbmdI8IfMM6ow0dr93HDavRh0IUzx/V20npEWaqwXnk6NHYD\ntQODZoSu3vruKzdige+8m2VLdQ01uBkk8IbvHvsrawDnXcXWsE3jQ5HeoYcXMCkD\nesPfbX646QKBgDcmy5Vj268CRsiqyTke0t1dvRo2xOlY8DLY9eSjgGb41Pia9Iea\n2bKwsGBrsVaatSDt0C3tVVDGj2MX6RiopDHx6PbEgAzc6oNGsLdhbyBWvu/2BewW\nMLzOwQbHjH9EsXH29H2XZ0sF5eHwkpl/q84cu9fmBd/b+R4UTdZgpMTJAoGBAM/3\n1m2cYLSVQTm4sYO02vUzNKQvHE9bgxMLYApVCr95yvkTEB+/U1fVX9nstKULuS7z\naYR37fGrD3ryyUPFS8utz2WFS+rftBuPErO6GPupNAeGmwYZ1lYJJ069JBY9/jOM\nL3hHDCLwqy2feh1TP9zfA/SOKE3DFfRMxeOO5tJRAoGAfipLUvxL/YdXtpk4wjMw\nrWTFkbjrhXZV49fl0OLbvKopa92WCcK3idq4rfwYK58JSOKHW7VdOL8qj1HnPb19\ntnebNZyvQI9c14K9C9U0hcpqIBcM73tqFfP+iEE22KedcOtacZUshc1ptPGVyiNh\n2/oL34Ue1J0sZT7hFzU5rX4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-73lyv@smartglasses-1653630452006.iam.gserviceaccount.com",
+  "client_id": "116125344421528621075",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zwzsk%40voice-project-347310.iam.gserviceaccount.com"
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-73lyv%40smartglasses-1653630452006.iam.gserviceaccount.com"
 }
 
-
 config  = {
-  "apiKey" : "AIzaSyClu-uLdUaX1UIXS7jx0aqIHsLSj8EKrfw",
-  "authDomain" : "voice-project-347310.firebaseapp.com",
-  "databaseURL" : "https://voice-project-347310-default-rtdb.asia-southeast1.firebasedatabase.app",
-  "projectId" : "voice-project-347310",
-  "storageBucket" : "voice-project-347310.appspot.com",
-  "messagingSenderId" : "355231243743",
-  "appId" : "1:355231243743:web:0e38399cd0ceea966e786a",
-  "measurementId" : "G-C345ZZLNG7",
+  "apiKey": "AIzaSyAVU8V2XXwZd6qsQFVYYqZh-6sL06oePVY",
+  "authDomain": "smartglasses-1653630452006.firebaseapp.com",
+  "databaseURL" : "https://smartglasses-1653630452006-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "projectId": "smartglasses-1653630452006",
+  "storageBucket": "smartglasses-1653630452006.appspot.com",
+  "messagingSenderId": "237921897116",
+  "appId": "1:237921897116:web:b9f58cd783e76ec7603b59",
+  "measurementId": "G-HR984XK0FN",
   "serviceAccount" : Key
 }
 firebase = pyrebase.initialize_app(config)
