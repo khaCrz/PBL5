@@ -26,7 +26,7 @@
     {% for file in ListFiles %}
     <tr>
         <td>{{file.name}}</td>
-        <td><a href="/GetText?id={{file.id}}">Get Text</td>
+        <td><a href="/GetText?ids={{file.ids}}">Get Text</td>
       </tr>
       {% endfor %}
 {% endblock %}

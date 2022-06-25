@@ -1,8 +1,9 @@
 from django.db import models
+from scipy.fftpack import idstn
 
 # Create your models here.
 class FileWav(models.Model):
-    id = models.IntegerField(default=1)
+    ids = models.IntegerField(default=1)
     name = models.CharField(max_length=50)
     status = models.BooleanField(default=False)
     text = models.CharField(max_length=200, default='')
@@ -11,9 +12,9 @@ class FileWav(models.Model):
         self.save()
     
     @staticmethod
-    def get_file_by_id(id):
+    def get_file_by_id(ids):
         try:
-            return FileWav.objects.get(id= id)
+            return FileWav.objects.get(ids= ids)
         except:
             return False
     
