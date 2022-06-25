@@ -65,9 +65,6 @@ def GetText(request):
 
 
 def Main(request):
-  # storage.child(path_on_cloud).download("untitled1.wav")
-  # URL = path_on_local + "untitled1.wav"
-  # print(GetTextFromVoice(URL))
   all_files = storage.list_files()
   ListFile = []
   for file in all_files:

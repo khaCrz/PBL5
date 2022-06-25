@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class FileWav(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.IntegerField(default=1)
     name = models.CharField(max_length=50)
     status = models.BooleanField(default=False)
     text = models.CharField(max_length=200, default='')
