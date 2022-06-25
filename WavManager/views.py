@@ -50,7 +50,7 @@ def GetTextFromVoice(url):
         return ("Sorry I understand!")
 
 def GetText(request):
-    id = request.GET.get('id')
+    id = request.GET.get('ids')
     file = FileWav.get_file_by_id(id)
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
