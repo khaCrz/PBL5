@@ -2,6 +2,7 @@ from django.shortcuts import render
 import os
 import speech_recognition as sr
 from .models import FileWav
+from django.http import JsonResponse
 import pyrebase
 
 Key = {
@@ -58,9 +59,9 @@ def GetText(request):
     
     #get all file
     data = {}
-    data['Files'] = file
+    data['Files'] = file.name
     data['Text'] = Text
-    return render(request, 'result.html', data)
+    return JsonResponse(data, safe=False)
 
 
 
