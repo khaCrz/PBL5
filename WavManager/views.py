@@ -51,15 +51,15 @@ def GetTextFromVoice(url):
 
 def GetText(request):
     id = request.GET.get('ids')
-    file = FileWav.get_file_by_id(id)
-    storage.child(file.name).download(file.name,file.name)
-    Path = os.path.abspath(file.name)
-    Text = GetTextFromVoice(Path)
+    # file = FileWav.get_file_by_id(id)
+    # storage.child(file.name).download(file.name,file.name)
+    # Path = os.path.abspath(file.name)
+    # Text = GetTextFromVoice(Path)
     
     #get all file
     data = {}
-    data['Files'] = file.name
-    data['Text'] = Text
+    data['Files'] = "file1.wav"
+    data['Text'] = "OK"
     return JsonResponse(data, safe=False)
 
 
