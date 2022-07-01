@@ -57,7 +57,7 @@ def GetText(request):
     for i in FileWav.objects.all():
       print(i.name, "---", name)
     file = FileWav.get_file_by_name(name)
-    #print(file.name)
+    print(file.name)
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
     data = {}
