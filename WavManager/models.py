@@ -7,21 +7,21 @@ class FileWav(models.Model):
     name = models.CharField(max_length=50)
     status = models.BooleanField(default=False)
     text = models.CharField(max_length=200, default='')
-
+    foldername = models.CharField(max_length=50, default='')
     def Save(self):
         self.save()
     
     @staticmethod
     def get_file_by_id(ids):
         try:
-            return FileWav.objects.get(ids= ids)
+            return FileWav.objects.get(ids= ids)[0]
         except:
             return False
 
     @staticmethod
     def get_file_by_name(name):
         try:
-            return FileWav.objects.get(name= name)
+            return FileWav.objects.get(name= name)[0]
         except:
             return False
     

@@ -53,12 +53,9 @@ def GetTextFromVoice(url):
 
 def GetText(request):
     name = request.GET.get('name')
-    print("Get all file name")
-    for i in FileWav.objects.all():
-      print(i.name, "---", name)
     file = FileWav.get_file_by_name(name)
     print(file.name)
-    storage.child(file.name).download(file.name,file.name)
+    storage.child(file.foldername + file.name).download(file.foldername +file.name,file.name)
     Path = os.path.abspath(file.name)
     data = {}
     data['Files'] = file.name
@@ -78,12 +75,15 @@ def GetText(request):
 def Main(request):
   all_files = storage.list_files()
   ListFile = []
+  file = None
   for file in all_files:
     if '/' in file.name:
       Name = file.name.split('/')[1]
+      file = FileWav(name = Name, foldername = (file.name.split('/')[0]+'/'))
     else:
       Name = file.name
-    file = FileWav(name = Name)
+      file = FileWav(name = Name)
+    
     if file.isExists():
       continue
     else:
