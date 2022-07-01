@@ -14,14 +14,14 @@ class FileWav(models.Model):
     @staticmethod
     def get_file_by_id(ids):
         try:
-            return FileWav.objects.get(ids= ids)[0]
+            return FileWav.objects.get(ids= ids)
         except:
             return False
 
     @staticmethod
     def get_file_by_name(name):
         try:
-            return FileWav.objects.get(name= name)[0]
+            return FileWav.objects.get(name= name)
         except:
             return False
     
