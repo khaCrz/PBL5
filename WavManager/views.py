@@ -29,6 +29,7 @@ config  = {
   "measurementId": "G-HR984XK0FN",
   "serviceAccount" : Key
 }
+FileWav.objects.all().delete()
 firebase = pyrebase.initialize_app(config)
 storage = firebase.storage()
 path_on_local = '/content/drive/MyDrive/PBL5/DoAnPBL5/'
@@ -50,16 +51,16 @@ def GetTextFromVoice(url):
         return ("Sorry I understand!")
 
 def GetText(request):
-    id = request.GET.get('ids')
-    # file = FileWav.get_file_by_id(id)
-    # storage.child(file.name).download(file.name,file.name)
-    # Path = os.path.abspath(file.name)
+    name = request.GET.get('name')
+    file = FileWav.get_file_by_name(name)
+    storage.child(file.name).download(file.name,file.name)
+    Path = os.path.abspath(file.name)
     # Text = GetTextFromVoice(Path)
     
     #get all file
     data = {}
-    data['Files'] = "file1.wav"
-    data['Text'] = "OK"
+    data['Files'] = file.name
+    data['Text'] = Path
     return JsonResponse(data, safe=False)
 
 

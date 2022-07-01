@@ -17,6 +17,13 @@ class FileWav(models.Model):
             return FileWav.objects.get(ids= ids)
         except:
             return False
+
+    @staticmethod
+    def get_file_by_name(name):
+        try:
+            return FileWav.objects.get(name= name)
+        except:
+            return False
     
     def isExists(self):
         if FileWav.objects.filter(name = self.name):
