@@ -55,7 +55,7 @@ def GetText(request):
     name = request.GET.get('name')
     print(file.name)
     file = FileWav.get_file_by_name(name)
-    storage.child(file.foldername + file.name).download(file.foldername +file.name,file.name)
+    storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
     data = {}
     data['Files'] = file.name
@@ -78,16 +78,14 @@ def Main(request):
   file = None
   for file in all_files:
     if '/' in file.name:
-      Name = file.name.split('/')[1]
-      file = FileWav(name = Name, foldername = (file.name.split('/')[0]+'/'))
+      file = FileWav(name = file.name.split('/')[1], foldername = (file.name.split('/')[0])+'/')
     else:
-      Name = file.name
-      file = FileWav(name = Name)
+      file = FileWav(name = file.name)
     
     if file.isExists():
       continue
     else:
-      print("add file ", Name)
+      print("add file ", file.foldername, "--", file.name)
       file.Save()
   ListFile = FileWav.objects.all()
   data = {}
