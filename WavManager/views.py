@@ -54,11 +54,9 @@ def GetText(request):
     name = request.GET.get('name')
     print(name)
     file = FileWav.get_file_by_name(name)
-    
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
     # Text = GetTextFromVoice(Path)
-    
     #get all file
     data = {}
     data['Files'] = file.name
@@ -75,6 +73,7 @@ def Main(request):
     if file.isExists():
       continue
     else:
+      print("add file ", file.name)
       file.Save()
   ListFile = FileWav.objects.all()
   data = {}
