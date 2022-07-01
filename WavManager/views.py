@@ -53,6 +53,7 @@ def GetTextFromVoice(url):
 def GetText(request):
     name = request.GET.get('name')
     file = FileWav.get_file_by_name(name)
+    print(file.type())
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
     # Text = GetTextFromVoice(Path)
@@ -75,7 +76,6 @@ def Main(request):
     else:
       file.Save()
   ListFile = FileWav.objects.all()
-  print(len(ListFile))
   data = {}
   data['ListFiles'] = ListFile
   return render(request, 'main.html', data)
