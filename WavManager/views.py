@@ -4,6 +4,7 @@ import speech_recognition as sr
 from .models import FileWav
 from django.http import JsonResponse
 import pyrebase
+import re
 
 Key = {
   "type": "service_account",
@@ -61,7 +62,10 @@ def GetText(request):
     #get all file
     if file.name.split('.')[1].__eq__("wav"):
       Text = GetTextFromVoice(Path)
-      data['Text'] = Text
+      if re.search(r'picture|photo|pictures|photos',Text):
+        data['Text'] = "OK"
+      else:
+        data['Text'] = "NOTOK"
     else:
       data['Text'] = "not a file wav"
     return JsonResponse(data, safe=False)
