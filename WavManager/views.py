@@ -52,8 +52,9 @@ def GetTextFromVoice(url):
 
 def GetText(request):
     name = request.GET.get('name')
+    print(name)
     file = FileWav.get_file_by_name(name)
-    print(file.type())
+    
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
     # Text = GetTextFromVoice(Path)
