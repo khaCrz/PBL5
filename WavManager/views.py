@@ -69,6 +69,7 @@ def Main(request):
   all_files = storage.list_files()
   ListFile = []
   for file in all_files:
+    Name = file.name.split('/')[1]
     file = FileWav(name = file.name)
     if file.isExists():
       continue
