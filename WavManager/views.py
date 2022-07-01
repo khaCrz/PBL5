@@ -69,12 +69,15 @@ def Main(request):
   all_files = storage.list_files()
   ListFile = []
   for file in all_files:
-    Name = file.name.split('/')[1]
-    file = FileWav(name = file.name)
+    if '/' in file.name:
+      Name = file.name.split('/')[1]
+    else:
+      Name = file.name
+    file = FileWav(name = Name)
     if file.isExists():
       continue
     else:
-      print("add file ", file.name)
+      print("add file ", Name)
       file.Save()
   ListFile = FileWav.objects.all()
   data = {}
