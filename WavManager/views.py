@@ -56,11 +56,14 @@ def GetText(request):
     file = FileWav.get_file_by_name(name)
     storage.child(file.name).download(file.name,file.name)
     Path = os.path.abspath(file.name)
-    # Text = GetTextFromVoice(Path)
-    #get all file
     data = {}
     data['Files'] = file.name
-    data['Text'] = Path
+    #get all file
+    if file.name.split('.')[1].__eq__("wav"):
+      Text = GetTextFromVoice(Path)
+      data['Text'] = Text
+    else:
+      data['Text'] = "not a file wav"
     return JsonResponse(data, safe=False)
 
 
